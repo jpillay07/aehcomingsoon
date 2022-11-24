@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">  
+    <title>AEH Digital - Coming Soon</title>
+</head>
+<body>
+    <div class="scene">
+      <div class="details-area">
+        <div class="logo-container">
+          <img class="aeh-logo" src="images/AEHWhite.png" />
+        </div>
+        
+        <h1 class="coming-soon-text">Coming Soon</h1>
+
+        <p class="about-text">Something awesome is happening!</p>
+      </div>
+        <div class="lava-lamp" style="--height: 400; --width: 150">
+          <div class="lava-lamp__main">
+            <div class="lava-lamp__glass">
+                <div class="lava-lamp__lava">
+                  <svg>
+                    <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                    <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                    <circle class="blob" r="18.5" cx="63" cy="400" style="--skewX: 5; --skewY: -5; --height: 37; --speed: 29; --delay: -3; --direction: alternate;"></circle>
+                    <circle class="blob" r="37.5" cx="35" cy="400" style="--skewX: 3; --skewY: 2; --height: 75; --speed: 40; --delay: -9; --direction: alternate-reverse;"></circle>
+                    <circle class="blob" r="36" cx="26" cy="400" style="--skewX: 5; --skewY: 1; --height: 72; --speed: 20; --delay: -2; --direction: alternate;"></circle>
+                  </svg>
+                </div>
+                <div class="lava-lamp__lava">
+                  <svg>
+                    <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                    <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                    <circle class="blob" r="33" cx="58" cy="400" style="--skewX: -1; --skewY: 3; --height: 66; --speed: 21; --delay: -7; --direction: alternate-reverse;"></circle>
+                    <circle class="blob" r="29.5" cx="27" cy="400" style="--skewX: -1; --skewY: 5; --height: 59; --speed: 8; --delay: -1; --direction: alternate-reverse;"></circle>
+                    <circle class="blob" r="34.5" cx="91" cy="400" style="--skewX: 0; --skewY: 4; --height: 69; --speed: 50; --delay: -10; --direction: alternate-reverse;"></circle>
+                    <circle class="blob" r="46.5" cx="109" cy="400" style="--skewX: -2; --skewY: 0; --height: 93; --speed: 10; --delay: -5; --direction: alternate-reverse;"></circle>
+                  </svg>
+                </div>
+                <div class="lava-lamp__lava">
+                  <svg>
+                    <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                    <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                    <circle class="blob" r="32.5" cx="130" cy="400" style="--skewX: 1; --skewY: -3; --height: 65; --speed: 26; --delay: -9; --direction: alternate-reverse;"></circle>
+                    <circle class="blob" r="21" cx="65" cy="400" style="--skewX: 4; --skewY: 5; --height: 42; --speed: 36; --delay: -5; --direction: alternate-reverse;"></circle>
+                  </svg>
+                </div>
+                <div class="lava-lamp__lava">
+                  <svg>
+                    <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                    <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                    <circle class="blob" r="34" cx="35" cy="400" style="--skewX: -5; --skewY: 3; --height: 68; --speed: 18; --delay: -8; --direction: alternate-reverse;"></circle>
+                  </svg>
+                </div>
+            </div>
+          </div>
+          <div class="lava-lamp__base"></div>
+        </div>
+        <svg style="position: absolute; left: 100%">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="BLUR"></feGaussianBlur>
+              <feColorMatrix in="BLUR" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="GOO"></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+</body>
+</html>
